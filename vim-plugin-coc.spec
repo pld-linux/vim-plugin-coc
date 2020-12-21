@@ -1,12 +1,12 @@
 %define		plugin coc
 Summary:	Vim plugin: Intellisense engine, full language server protocol support as VSCode
 Name:		vim-plugin-%{plugin}
-Version:	0.0.79
+Version:	0.0.80
 Release:	1
 License:	MIT
 Group:		Applications/Editors/Vim
 Source0:	https://github.com/neoclide/coc.nvim/archive/v%{version}/coc.nvim-%{version}.tar.gz
-# Source0-md5:	13fe61895034d349cda1027dba06576f
+# Source0-md5:	f95c0a917d46d8c0ffa85dd6f5a93a98
 URL:		https://github.com/neoclide/coc.nvim/
 Requires:	nodejs >= 10.12
 Requires:	vim-rt >= 4:8
@@ -63,7 +63,7 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_vimdatadir}/pack/coc/start/coc.nvim
 %{_vimdatadir}/pack/coc/start/coc.nvim/autoload
 %dir %{_vimdatadir}/pack/coc/start/coc.nvim/bin
-%attr(755,root,root) %{_vimdatadir}/pack/coc/start/coc.nvim/bin/server.js
+%attr(755,root,root) %{_vimdatadir}/pack/coc/start/coc.nvim/bin/prompt.js
 %attr(755,root,root) %{_vimdatadir}/pack/coc/start/coc.nvim/bin/terminateProcess.sh
 %{_vimdatadir}/pack/coc/start/coc.nvim/build
 %{_vimdatadir}/pack/coc/start/coc.nvim/data
